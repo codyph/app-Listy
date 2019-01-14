@@ -23,12 +23,13 @@ class ListTableVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Number of cells
-        return 1
+        return imageArray.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Return configured cell
-        let cell = UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "parallaxCell", for: indexPath) as? ParallaxCell else { return UITableViewCell() }
+        cell.configureCell(withImage: imageArray[indexPath.row], withTitle: nameArray[indexPath.row])
         return cell
     }
 
