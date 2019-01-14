@@ -16,17 +16,20 @@ class ListTableVC: UITableViewController {
         tableView.dataSource = self
     }
 
-    func numberOfSections(in tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
         
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Number of cells
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Return configured cell
+        let cell = UITableViewCell()
+        return cell
     }
 
 }
