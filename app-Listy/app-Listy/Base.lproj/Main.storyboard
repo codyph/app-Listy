@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List TableVC-->
+        <scene sceneID="0QY-MD-Cw4">
+            <objects>
+                <tableViewController id="dNY-gn-hbl" customClass="ListTableVC" customModule="app_Listy" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qe5-HS-Gzw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="QRQ-WE-mbC">
+                                <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QRQ-WE-mbC" id="BQs-7r-diR">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="UVl-Pb-oja">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAMERAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MR-km-XDX">
+                                            <rect key="frame" x="16" y="11" width="343" height="128"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-HeavyItalic" family="Avenir Next" pointSize="50"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="3MR-km-XDX" secondAttribute="trailing" id="1UD-VO-8KA"/>
+                                        <constraint firstAttribute="bottom" secondItem="UVl-Pb-oja" secondAttribute="bottom" id="9Ag-ZL-AOA"/>
+                                        <constraint firstItem="3MR-km-XDX" firstAttribute="leading" secondItem="BQs-7r-diR" secondAttribute="leadingMargin" id="FB4-P3-hD1"/>
+                                        <constraint firstItem="UVl-Pb-oja" firstAttribute="top" secondItem="BQs-7r-diR" secondAttribute="top" id="I1r-Bo-KDG"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="3MR-km-XDX" secondAttribute="bottom" id="OLR-QL-FlS"/>
+                                        <constraint firstAttribute="trailing" secondItem="UVl-Pb-oja" secondAttribute="trailing" id="qjS-Cy-sU5"/>
+                                        <constraint firstItem="3MR-km-XDX" firstAttribute="top" secondItem="BQs-7r-diR" secondAttribute="topMargin" id="r2a-ZJ-VC9"/>
+                                        <constraint firstItem="UVl-Pb-oja" firstAttribute="leading" secondItem="BQs-7r-diR" secondAttribute="leading" id="xhH-3f-89s"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dNY-gn-hbl" id="rGB-5u-MEN"/>
+                            <outlet property="delegate" destination="dNY-gn-hbl" id="8IH-bY-N8t"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3TQ-3P-FrP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="140"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="1080" height="720"/>
+    </resources>
+</document>
